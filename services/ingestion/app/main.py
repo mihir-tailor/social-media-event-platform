@@ -10,7 +10,7 @@ from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from models import (EventPayload, EventResponse, HealthResponse, BatchEventPayload, BatchEventResponse)
+from .models import (EventPayload, EventResponse, HealthResponse, BatchEventPayload, BatchEventResponse)
 
 from .kafka_producer import producer
 from .config import settings
