@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: social-media-platform
+  labels:
+    name: social-media-platform
+    environment: production

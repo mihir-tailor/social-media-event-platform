@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     KAFKA_TOPIC: str = "social-events"
     KAFKA_PRODUCER_ACKS: str = "1"  # 0, 1, or "all"
     KAFKA_PRODUCER_RETRIES: int = 3
-    KAFKA_PRODUCER_COMPRESSION_TYPE: str = "snappy"  # none, gzip, snappy, lz4, zstd
+    KAFKA_PRODUCER_COMPRESSION_TYPE: str = "gzip"  # none, gzip, snappy, lz4, zstd
     KAFKA_PRODUCER_BATCH_SIZE: int = 16384  # bytes
     KAFKA_PRODUCER_LINGER_MS: int = 10  # milliseconds
     KAFKA_PRODUCER_MAX_IN_FLIGHT: int = 5
@@ -39,6 +39,7 @@ class Settings(BaseSettings):
     API_V1_PREFIX: str = "/api/v1"
     API_TITLE: str = "Social Media Event Ingestion API"
     API_DESCRIPTION: str = "High-throughput event ingestion service"
+    API_VERSION: str = "1.0.0"
     
     # Rate limiting
     RATE_LIMIT_ENABLED: bool = True
