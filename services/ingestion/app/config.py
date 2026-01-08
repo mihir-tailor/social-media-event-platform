@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     # Kafka configuration
     KAFKA_BOOTSTRAP_SERVERS: str = "localhost:9092"
     KAFKA_TOPIC: str = "social-events"
-    KAFKA_PRODUCER_ACKS: str = "1"  # 0, 1, or "all"
+    KAFKA_PRODUCER_ACKS: int = 1  # 0, 1, or "all"
     KAFKA_PRODUCER_RETRIES: int = 3
     KAFKA_PRODUCER_COMPRESSION_TYPE: str = "gzip"  # none, gzip, snappy, lz4, zstd
     KAFKA_PRODUCER_BATCH_SIZE: int = 16384  # bytes

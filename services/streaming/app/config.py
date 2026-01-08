@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     SPARK_LOG_LEVEL: str = "WARN"
     
     # Kafka configuration
-    KAFKA_BOOTSTRAP_SERVERS: str = "localhost:9092"
+    KAFKA_BOOTSTRAP_SERVERS: str = "kafka:9092"
     KAFKA_TOPIC: str = "social-events"
     KAFKA_GROUP_ID: str = "spark-streaming-consumer"
     KAFKA_STARTING_OFFSETS: str = "latest"  # earliest or latest
